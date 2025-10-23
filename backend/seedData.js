@@ -35,10 +35,11 @@ const sampleProducts = [
     ratings: 4.3
   },
   {
-    name: "Nike Air Max 270",
-    description: "Comfortable running shoes with responsive cushioning",
+    name:"JavaScript Programming Book",
+    description: "Comprehensive guide to modern JavaScript development",
+    price: 39.99,
     price: 149.99,
-    category: "Fashion",
+    category: "Books",
     stock: 30,
     image: "shoes.jpg",
     ratings: 4.6
@@ -80,10 +81,10 @@ const sampleProducts = [
     ratings: 4.5
   },
   {
-    name: "Wireless Gaming Mouse",
-    description: "High-precision gaming mouse with RGB lighting",
+    name:  "Cotton T-Shirt Pack",
+    description: "Pack of 3 premium cotton t-shirts in various colors",
     price: 79.99,
-    category: "Electronics",
+    category: "Fashion",
     stock: 22,
     image: "gaming-mouse.jpg",
     ratings: 4.6
