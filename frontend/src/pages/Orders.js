@@ -14,7 +14,7 @@ const Orders = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/orders');
+      const response = await axios.get('https://full-stack-e-commerce-style-hub-platform.onrender.com/api/orders');
       setOrders(response.data);
     } catch (error) {
       console.error('Error fetching orders:', error);
@@ -74,7 +74,7 @@ const Orders = () => {
                     borderBottom: '1px solid #eee'
                   }}>
                     <img 
-                      src={`http://localhost:5000/uploads/${item.product.image}`} 
+                      src={`https://full-stack-e-commerce-style-hub-platform.onrender.com/uploads/${item.product.image}`} 
                       alt={item.product.name}
                       style={{ width: '50px', height: '50px', objectFit: 'cover', marginRight: '1rem' }}
                     />
