@@ -46,7 +46,7 @@ const Products = () => {
   const fetchProducts = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5000/api/products');
+      const response = await axios.get('https://full-stack-e-commerce-style-hub-platform.onrender.com/api/products');
       console.log('Products loaded:', response.data);
       setProducts(response.data);
       
@@ -104,7 +104,7 @@ const Products = () => {
           <div className="empty-state-icon">❌</div>
           <h3>Error Loading Products</h3>
           <p>{error}</p>
-          <p>Make sure your backend is running on http://localhost:5000</p>
+          <p>Make sure your backend is running on hhttps://full-stack-e-commerce-style-hub-platform.onrender.com</p>
           <button onClick={fetchProducts} className="btn btn-primary">
             Try Again
           </button>
