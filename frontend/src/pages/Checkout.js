@@ -23,7 +23,7 @@ const Checkout = () => {
 
   const fetchCart = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/cart');
+      const response = await axios.get('https://full-stack-e-commerce-style-hub-platform.onrender.com/api/cart');
       setCart(response.data);
     } catch (error) {
       console.error('Error fetching cart:', error);
@@ -42,7 +42,7 @@ const Checkout = () => {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:5000/api/orders', {
+      await axios.post('https://full-stack-e-commerce-style-hub-platform.onrender.com/api/orders', {
         shippingAddress,
         paymentMethod
       });
