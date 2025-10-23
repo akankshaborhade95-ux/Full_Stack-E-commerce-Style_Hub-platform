@@ -32,7 +32,7 @@ const ProductDetail = () => {
 
   const fetchProduct = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/products/${id}`);
+      const response = await axios.get(`https://full-stack-e-commerce-style-hub-platform.onrender.com/api/products/${id}`);
       setProduct(response.data);
     } catch (error) {
       console.error('Error fetching product:', error);
@@ -53,7 +53,7 @@ const ProductDetail = () => {
     setMessage('');
 
     try {
-      await axios.post('http://localhost:5000/api/cart/add', {
+      await axios.post('https://full-stack-e-commerce-style-hub-platform.onrender.com/api/cart/add', {
         productId: id,
         quantity
       });
