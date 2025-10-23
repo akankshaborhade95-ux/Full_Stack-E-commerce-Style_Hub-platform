@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   // Dynamic API base URL - will work with any port
-  const API_BASE_URL = 'http://localhost:5000'; // Change this if backend uses different port
+  const API_BASE_URL = https://full-stack-e-commerce-style-hub-platform.onrender.com/ // Change this if backend uses different port
 
   useEffect(() => {
     const token = localStorage.getItem('token');
