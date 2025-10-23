@@ -27,7 +27,7 @@ const Cart = () => {
     if (newQuantity < 1) return;
 
     try {
-      await axios.put(`http://localhost:5000/api/cart/update/${productId}`, {
+      await axios.put(`https://full-stack-e-commerce-style-hub-platform.onrender.com/api/cart/update/${productId}`, {
         quantity: newQuantity
       });
       fetchCart();
@@ -38,7 +38,7 @@ const Cart = () => {
 
   const removeItem = async (productId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/cart/remove/${productId}`);
+      await axios.delete(`https://full-stack-e-commerce-style-hub-platform.onrender.com//api/cart/remove/${productId}`);
       fetchCart();
     } catch (error) {
       console.error('Error removing item:', error);
