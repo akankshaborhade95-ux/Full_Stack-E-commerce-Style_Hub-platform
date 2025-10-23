@@ -69,9 +69,8 @@ app.post('/api/auth/login', (req, res) => {
     user: { id: 1, name: 'Test User', email: email }
   });
 });
-
-// Start server on port 5000
-const PORT = 5000;
+PORT = 'https://full-stack-e-commerce-style-hub-platform.onrender.com/'
+// Start s
 app.listen(PORT, () => {
   console.log('🎉 =================================');
   console.log('✅ BACKEND SERVER STARTED!');
